@@ -1,0 +1,62 @@
+<mat-toolbar>
+    <button (click)='goBack()' mat-mini-fab color="white">
+        <mat-icon class="mat-24">keyboard_arrow_left</mat-icon>
+      </button>
+</mat-toolbar>
+<mat-card>
+    <div id='title'>
+        <h2>{{planetDetail?.name + ' planet'}}</h2>
+      </div>
+      <mat-list id='list'>
+          <div class="items">
+              <h4>Climate:</h4>
+            <mat-list-item> {{planetDetail?.climate}}</mat-list-item>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="items">
+              <h4>Created:</h4>
+              <mat-list-item> {{planetDetail?.created | date}}</mat-list-item>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="items">
+              <h4>Diameter:</h4>
+              <mat-list-item>{{planetDetail?.diameter}}</mat-list-item>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="items">
+              <h4>Edited:</h4>
+              <mat-list-item> {{planetDetail?.edited | date}}</mat-list-item>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="items">
+              <h4>Gravity:</h4>
+              <mat-list-item> {{planetDetail?.gravity}}</mat-list-item>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="items">
+              <h4>Orbital period:</h4>
+              <mat-list-item> {{planetDetail?.orbital_period}}</mat-list-item>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="items">
+              <h4>Population:</h4>
+              <mat-list-item> {{planetDetail?.population}}</mat-list-item>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="items">
+              <h4>Rotation period:</h4>
+              <mat-list-item> {{planetDetail?.rotation_period}}</mat-list-item>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="items">
+              <h4>Surface water:</h4>
+              <mat-list-item> {{planetDetail?.surface_water}}</mat-list-item>
+          </div>
+          <mat-divider></mat-divider>
+          <div class="items">
+              <h4>Terrain:</h4>
+              <mat-list-item> {{planetDetail?.terrain}}</mat-list-item>
+          </div>
+          <mat-divider></mat-divider>
+        </mat-list>
+</mat-card>

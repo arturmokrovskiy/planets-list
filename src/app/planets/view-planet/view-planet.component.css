@@ -1,0 +1,25 @@
+#title {
+  letter-spacing:2px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15em
+}
+
+#list {
+  letter-spacing:2px;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.mat-card {
+  margin: 40px;
+}
+
+.mat-toolbar {
+  height: 120px;
+  padding-left: 30px;
+}
